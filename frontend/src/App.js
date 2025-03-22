@@ -76,13 +76,13 @@ import { Routes, Route } from "react-router-dom";
 import axios from "axios";
 import Home from "./views/Home";
 import AllCards from "./views/AllCards";
-import ResidentialRentals from "./pages/ResidentialRentals";
+import ResidentialRentals from "./pages/Rentals/ResidentialRentals"
 import NotFound from "./views/Not-found";
 import PostAd from "./components/PostAd";
 import PostForm from "./Post/PostForm";
+import ResidentialRentalList from "./pages/Rentals/ResidentialRentalList"
 import PostList from "./Post/PostList";
-import ResidentialRentalList from "./pages/ResidentialRentalList";
-import CategoryPosts from "./pages/CategoryPosts";
+import CategoryPosts from "./pages/Rentals/CategoryPosts";
 
 const App = () => {
   const [posts, setPosts] = useState([]);

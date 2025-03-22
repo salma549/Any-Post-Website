@@ -132,7 +132,7 @@
 // export default HomePage;
 
 import { Link } from "react-router-dom";
-import Navbar8 from "../components/Navbar8";
+import Navbar8 from "../../components/Navbar8";
 
 function HomePage() {
   return (
