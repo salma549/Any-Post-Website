@@ -1,0 +1,274 @@
+/* body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+
+.post-form {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  max-width: 550px;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.post-form h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 24px;
+}
+
+.post-form input,
+.post-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+}
+
+.post-form button {
+  width: 100%;
+  padding: 12px;
+  background: #ff7f00;  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.post-form button:hover {
+  background: #ff8000d2;}
+
+.post-list {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.post-card {
+  background: white;
+  border-radius: 20px 20px 50px 20px; 
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.post-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.post-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.post-card h2 {
+  margin: 15px 0;
+  font-size: 22px;
+  color: #333;
+  font-weight: bold;
+}
+
+.post-card p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+.post-date {
+  font-size: 14px;
+  color: #777;
+  margin-top: 12px;
+  font-style: italic;
+}
+
+.no-posts {
+  color: gray;
+  font-size: 18px;
+}
+
+.post-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer; 
+}
+
+.post-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.modal-content h3 {
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  padding: 8px 12px;
+  background: #ff7f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-content button:hover {
+  background: #ff7f00;}
+
+
+
+@media (min-width: 1024px) {
+  .post-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .post-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .post-grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+} */
+
+
+/* General styles */
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Button styling */
+.create-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Category list */
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-list li {
+  margin: 10px 0;
+}
+
+.category-list a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Post Grid */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Post Card */
+.post-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Form styling */
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.post-form input, .post-form textarea, .post-form select, .post-form button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.post-form button {
+  background: #D35400;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
