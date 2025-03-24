@@ -18,11 +18,12 @@ function VechilesFile() {
 
         <h2 style={styles.subheading}>Categories</h2>
         <ul style={styles.categoryList}>
-        <li style={styles.categoryItem}><Link to="/baby-kids/ALL" style={styles.categoryLink}>ALL</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/clothes-shoes" style={styles.categoryLink}>Baby Clothes & Shoes</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/toys-games" style={styles.categoryLink}>Toys & Games</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/baby-gear" style={styles.categoryLink}>Baby Gear (strollers, car seats)</Link></li>
-         <li style={styles.categoryItem}><Link to="/baby-kids/kids-furniture" style={styles.categoryLink}>Kids' Furniture</Link></li>
+          <li style={styles.categoryItem}><Link to="/jobs/ALL" style={styles.categoryLink}>ALL</Link></li>
+          <li style={styles.categoryItem}><Link to="/jobs/full-time-jobs" style={styles.categoryLink}>Full-Time Jobs</Link></li>
+          <li style={styles.categoryItem}><Link to="/jobs/part-time-jobs" style={styles.categoryLink}>Part-Time Jobs</Link></li>
+          <li style={styles.categoryItem}><Link to="/jobs/freelance-gigs" style={styles.categoryLink}>Freelance/Gigs</Link></li>
+          <li style={styles.categoryItem}><Link to="/jobs/internships" style={styles.categoryLink}>Internships</Link></li>
+          <li style={styles.categoryItem}><Link to="/jobs/work-from-home" style={styles.categoryLink}>Work-from-Home Opportunities</Link></li>
         </ul>
       </div>
     </>

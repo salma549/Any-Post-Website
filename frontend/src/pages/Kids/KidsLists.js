@@ -7,7 +7,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import "./styles.css"; // Import CSS for styling
 
-const VechilesList = () => {
+const KidsLists = () => {
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -22,7 +22,7 @@ const VechilesList = () => {
   // Fetch posts from backend based on selected category
   const fetchPosts = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/vehicles/${formData.category}`);
+      const response = await axios.get(`http://localhost:5000/baby-kids/${formData.category}`);
       setPosts(response.data);
     } catch (error) {
       console.error("Error fetching posts:", error);
@@ -52,7 +52,7 @@ const VechilesList = () => {
     data.append("image", formData.image);
 
     try {
-      const response = await axios.post(`http://localhost:5000/jobs/${formData.category}`, data);
+      const response = await axios.post(`http://localhost:5000/baby-kids/${formData.category}`, data);
       toast.success("Post added successfully!");
       setShowModal(true);
       setFormData({ title: "", description: "", price: "", category: "ALL", image: null });
@@ -95,7 +95,7 @@ const VechilesList = () => {
         <input type="file" onChange={handleFileChange} required />
 
         <select name="category" value={formData.category} onChange={handleChange}>
-        <option value="create2">All</option>
+        <option value="create10">All</option>
 
         <option value="/baby-kids/clothes-shoes">Baby Clothes & Shoes</option>
 <option value="/baby-kids/toys-games">Toys & Games</option>
@@ -142,4 +142,4 @@ const VechilesList = () => {
   );
 };
 
-export default VechilesList;
+export default KidsLists;

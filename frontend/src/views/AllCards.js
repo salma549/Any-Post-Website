@@ -200,6 +200,10 @@ const AllCards = () => {
       image: icon8,
       title: "Baby & Kids",
       topics: [
+        {
+          name: "ALL",
+          path: "/baby-kids/All",
+        },
         { name: "Baby Clothes & Shoes", path: "/baby-kids/clothes-shoes" },
         { name: "Toys & Games", path: "/baby-kids/toys-games" },
         {

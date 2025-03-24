@@ -163,7 +163,7 @@ function CategoryPosts() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/baby-kids/${category}`).then((res) => setPosts(res.data));
+    axios.get(`http://localhost:5000/jobs/${category}`).then((res) => setPosts(res.data));
   }, [category]);
 
   return (

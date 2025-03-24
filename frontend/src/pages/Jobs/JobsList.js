@@ -22,7 +22,7 @@ const VechilesList = () => {
   // Fetch posts from backend based on selected category
   const fetchPosts = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/vehicles/${formData.category}`);
+      const response = await axios.get(`http://localhost:5000/jobs/${formData.category}`);
       setPosts(response.data);
     } catch (error) {
       console.error("Error fetching posts:", error);

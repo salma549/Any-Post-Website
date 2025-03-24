@@ -110,6 +110,9 @@ import CategoryPosts8 from "./pages/Hobbies/CategoryPosts";
 import HealthFiles from "./pages/Health/HealthFiles";
 import HealthLists from "./pages/Health/HealthLists";
 import CategoryPosts9 from "./pages/Health/CategoryPosts";
+import KidsFiles from "./pages/Kids/KidsFiles";
+import KidsLists from "./pages/Kids/KidsLists";
+import CategoryPosts10 from "./pages/Kids/CategoryPosts";
 
 
 
@@ -193,6 +196,11 @@ const App = () => {
         <Route path="/create9" element={<HealthLists/>}/>
         <Route path="/health-beauty/:category" element={<CategoryPosts9 />} />
         <Route path="/health-beauty/ALL" element={<HealthFiles />} />
+
+
+        <Route path="/create10" element={<KidsLists/>}/>
+        <Route path="/baby-kids/:category" element={<CategoryPosts10 />} />
+        <Route path="/baby-kids/ALL" element={<KidsFiles />} />
 
 
 

@@ -26,6 +26,8 @@ app.use("/home-furniture", postRoutes);
 app.use("/pets", postRoutes);
 app.use("/hobbies", postRoutes);
 app.use("/health-beauty", postRoutes);
+app.use("/baby-kids", postRoutes);
+
 
 
 
