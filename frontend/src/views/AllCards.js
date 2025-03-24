@@ -53,6 +53,11 @@ const AllCards = () => {
       image: icon2,
       title: "Vehicles",
       topics: [
+        {
+          name: "ALL",
+          path: "/vehicles/All",
+        },
+        
         { name: "Cars", path: "/vehicles/cars" },
         {
           name: "Motorcycles & Scooters",
@@ -73,6 +78,10 @@ const AllCards = () => {
       image: icon3,
       title: "Jobs",
       topics: [
+        {
+          name: "ALL",
+          path: "/jobs/All",
+        },
         { name: "Full-Time Jobs", path: "/jobs/full-time-jobs" },
         { name: "Part-Time Jobs", path: "/jobs/part-time-jobs" },
         { name: "Freelance/Gigs", path: "/jobs/freelance-gigs" },
@@ -84,6 +93,10 @@ const AllCards = () => {
       image: icon12,
       title: "Services",
       topics: [
+        {
+          name: "ALL",
+          path: "/services/All",
+        },
         { name: "Home & Garden Services", path: "/services/home-garden" },
         { name: "Beauty & Wellness", path: "/services/beauty-wellness" },
         { name: "Business & IT Services", path: "/services/business-it" },
@@ -95,6 +108,10 @@ const AllCards = () => {
       image: icon13,
       title: "Electronics & Appliances",
       topics: [
+        {
+          name: "ALL",
+          path: "/electronics/All",
+        },
         { name: "Mobile Phones", path: "/electronics/mobile-phones" },
         { name: "Laptops & Computers", path: "/electronics/laptops" },
         { name: "Home Appliances", path: "/electronics/home-appliances" },
@@ -106,6 +123,10 @@ const AllCards = () => {
       image: icon14,
       title: "Fashion & Accessories",
       topics: [
+        {
+          name: "ALL",
+          path: "/fashion/All",
+        },
         { name: "Clothing (Men, Women, Kids)", path: "/fashion/clothing" },
         { name: "Shoes & Footwear", path: "/fashion/shoes" },
         { name: "Jewelry & Watches", path: "/fashion/jewelry" },
@@ -190,6 +211,10 @@ const AllCards = () => {
       image: icon10,
       title: "Community & Events",
       topics: [
+        {
+          name: "ALL",
+          path: "/community/All",
+        },
         { name: "Classes & Workshops", path: "/community/classes" },
         { name: "Local Events", path: "/community/local-events" },
         { name: "Lost & Found", path: "/community/lost-found" },

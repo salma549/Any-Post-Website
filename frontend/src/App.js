@@ -83,6 +83,24 @@ import PostForm from "./Post/PostForm";
 import ResidentialRentalList from "./pages/Rentals/ResidentialRentalList"
 import PostList from "./Post/PostList";
 import CategoryPosts from "./pages/Rentals/CategoryPosts";
+import VehiclesList from "./pages/Vehicles/VehiclesList"
+import CategoryPosts1 from "./pages/Vehicles/CategoryPosts"
+import VehiclesFile from "./pages/Vehicles/VehiclesFile"
+import CategoryPosts2 from "./pages/Jobs/CategoryPosts";
+import JobsFile from "./pages/Jobs/JobsFile"
+import JobsLists from "./pages/Jobs/JobsList"
+import ServicesList from "./pages/Services/SevicesList"
+import ServicesFile from "./pages/Services/ServicesFile"
+import CategoryPosts3 from "./pages/Services/CategoryList";
+import ElectronicsFile from "./pages/Electronics/ElectronicsFile"
+import ElectronicsList from "./pages/Electronics/ElectronicsLists"
+import CategoryPosts4 from "./pages/Electronics/CategoryPosts";
+import FashionFiles from "./pages/Fashion/FashionFiles";
+import FashionList from "./pages/Fashion/FashionList";
+import CategoryPosts5 from "./pages/Fashion/CategoryPosts";
+
+
+
 
 const App = () => {
   const [posts, setPosts] = useState([]);
@@ -115,10 +133,39 @@ const App = () => {
         <Route path="/post-ad/post1" element={<PostForm onPostAdded={handlePostAdded} />} />
         <Route path="/post-ad/post2" element={<PostList posts={posts} />} />
         <Route path="/all-cards" element={<AllCards />} />
+
         <Route path="/create" element={<ResidentialRentalList />} />
         <Route path="/real-estate/:category" element={<CategoryPosts />} />
         <Route path="/real-estate/ALL" element={<ResidentialRentals />} />
-        <Route path="*" element={<NotFound />} />
+
+        <Route path="/create1" element={<VehiclesList/>}/>
+        <Route path="/vehicles/:category" element={<CategoryPosts1 />} />
+        <Route path="/Vehicles/ALL" element={<VehiclesFile />} />
+
+        <Route path="/create2" element={<JobsLists/>}/>
+        <Route path="/jobs/:category" element={<CategoryPosts2 />} />
+        <Route path="/jobs/ALL" element={<JobsFile />} />
+
+        <Route path="/create3" element={<ServicesList/>}/>
+        <Route path="/services/:category" element={<CategoryPosts3 />} />
+        <Route path="/services/ALL" element={<ServicesFile />} />
+
+        <Route path="/create4" element={<ElectronicsList/>}/>
+        <Route path="/electronics/:category" element={<CategoryPosts4 />} />
+        <Route path="/electronics/ALL" element={<ElectronicsFile />} />
+
+
+
+        <Route path="/create5" element={<FashionList/>}/>
+        <Route path="/fashion/:category" element={<CategoryPosts5 />} />
+        <Route path="/fashion/ALL" element={<FashionFiles />} />
+
+      
+
+
+
+
+       
       </Routes>
 
     </div>

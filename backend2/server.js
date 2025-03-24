@@ -17,5 +17,13 @@ mongoose
 
 const postRoutes = require("./routes/postRoutes");
 app.use("/real-estate", postRoutes);
+app.use("/vehicles", postRoutes);
+app.use("/jobs", postRoutes);
+app.use("/services", postRoutes);
+app.use("/electronics", postRoutes);
+app.use("/fashion", postRoutes);
+
+
+
 
 app.listen(5000, () => console.log("Server running on port 5000"));
