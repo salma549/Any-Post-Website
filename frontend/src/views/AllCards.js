@@ -138,6 +138,10 @@ const AllCards = () => {
       image: icon4,
       title: "Home & Furniture",
       topics: [
+        {
+          name: "ALL",
+          path: "/home-furniture/All",
+        },
         { name: "Furniture", path: "/home-furniture/furniture" },
         { name: "Home Decor", path: "/home-furniture/home-decor" },
         { name: "Kitchen & Dining", path: "/home-furniture/kitchen-dining" },
@@ -149,6 +153,10 @@ const AllCards = () => {
       image: icon5,
       title: "Pets & Animals",
       topics: [
+        {
+          name: "ALL",
+          path: "/pets/All",
+        },
         { name: "Dogs & Puppies", path: "/pets/dogs" },
         { name: "Cats & Kittens", path: "/pets/cats" },
         { name: "Birds & Fish", path: "/pets/birds-fish" },
@@ -160,6 +168,10 @@ const AllCards = () => {
       image: icon6,
       title: "Books, Music & Hobbies",
       topics: [
+        {
+          name: "ALL",
+          path: "/hobbies/All",
+        },
         { name: "Books (New & Used)", path: "/hobbies/books" },
         { name: "Musical Instruments", path: "/hobbies/musical-instruments" },
         { name: "Video Games & Consoles", path: "/hobbies/video-games" },
@@ -171,6 +183,10 @@ const AllCards = () => {
       image: icon7,
       title: "Health & Beauty",
       topics: [
+        {
+          name: "ALL",
+          path: "/health-beauty/All",
+        },
         { name: "Beauty Products", path: "/health-beauty/beauty-products" },
         { name: "Fitness Equipment", path: "/health-beauty/fitness-equipment" },
         {

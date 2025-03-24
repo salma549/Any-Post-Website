@@ -22,6 +22,13 @@ app.use("/jobs", postRoutes);
 app.use("/services", postRoutes);
 app.use("/electronics", postRoutes);
 app.use("/fashion", postRoutes);
+app.use("/home-furniture", postRoutes);
+app.use("/pets", postRoutes);
+app.use("/hobbies", postRoutes);
+app.use("/health-beauty", postRoutes);
+
+
+
 
 
 

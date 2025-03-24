@@ -1,9 +1,11 @@
 
 
+
+
 import { Link } from "react-router-dom";
 import Navbar8 from "../../components/Navbar8";
 
-function VechilesFile() {
+function HomeFiles() {
   return (
     <>
       {/* Navbar should be full width and visible clearly */}
@@ -13,16 +15,19 @@ function VechilesFile() {
 
       {/* Page Content */}
       <div style={styles.container}>
-        <h1 style={styles.heading}>Jobs Listings</h1>
-        <Link to="/create2" style={styles.createBtn}>Create New Post</Link>
+        <h1 style={styles.heading}>Home Listings</h1>
+        <Link to="/create6" style={styles.createBtn}>Create New Post</Link>
 
         <h2 style={styles.subheading}>Categories</h2>
         <ul style={styles.categoryList}>
-        <li style={styles.categoryItem}><Link to="/baby-kids/ALL" style={styles.categoryLink}>ALL</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/clothes-shoes" style={styles.categoryLink}>Baby Clothes & Shoes</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/toys-games" style={styles.categoryLink}>Toys & Games</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/baby-gear" style={styles.categoryLink}>Baby Gear (strollers, car seats)</Link></li>
-         <li style={styles.categoryItem}><Link to="/baby-kids/kids-furniture" style={styles.categoryLink}>Kids' Furniture</Link></li>
+        <li style={styles.categoryItem}><Link to="/ALL" style={styles.categoryLink}>ALL</Link></li>
+
+        <li style={styles.categoryItem}><Link to="/home-furniture/furniture" style={styles.categoryLink}>Furniture</Link></li>
+<li style={styles.categoryItem}><Link to="/home-furniture/home-decor" style={styles.categoryLink}>Home Decor</Link></li>
+<li style={styles.categoryItem}><Link to="/home-furniture/kitchen-dining" style={styles.categoryLink}>Kitchen & Dining</Link></li>
+<li style={styles.categoryItem}><Link to="/home-furniture/lighting-fans" style={styles.categoryLink}>Lighting & Fans</Link></li>
+<li style={styles.categoryItem}><Link to="/home-furniture/garden-outdoor" style={styles.categoryLink}>Garden & Outdoor</Link></li>
+
         </ul>
       </div>
     </>
@@ -110,4 +115,5 @@ styles.categoryLink[':hover'] = {
   color: "#007bff",
 };
 
-export default VechilesFile;
+export default HomeFiles;
+

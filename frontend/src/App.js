@@ -98,6 +98,18 @@ import CategoryPosts4 from "./pages/Electronics/CategoryPosts";
 import FashionFiles from "./pages/Fashion/FashionFiles";
 import FashionList from "./pages/Fashion/FashionList";
 import CategoryPosts5 from "./pages/Fashion/CategoryPosts";
+import HomeFiles from "./pages/Home/HomeFiles"
+import HomeLists from "./pages/Home/HomeLists"
+import CategoryPosts6 from "./pages/Home/CategoryPosts";
+import PetsFiles from "./pages/Pets/PetsFiles";
+import PetsLists from "./pages/Pets/PetsLists";
+import CategoryPosts7 from "./pages/Pets/CategoryPosts";
+import HobbiesFiles from "./pages/Hobbies/HobbiesFiles";
+import HobbiesLists from "./pages/Hobbies/HobbiesLists";
+import CategoryPosts8 from "./pages/Hobbies/CategoryPosts";
+import HealthFiles from "./pages/Health/HealthFiles";
+import HealthLists from "./pages/Health/HealthLists";
+import CategoryPosts9 from "./pages/Health/CategoryPosts";
 
 
 
@@ -159,6 +171,35 @@ const App = () => {
         <Route path="/create5" element={<FashionList/>}/>
         <Route path="/fashion/:category" element={<CategoryPosts5 />} />
         <Route path="/fashion/ALL" element={<FashionFiles />} />
+
+
+       
+        <Route path="/create6" element={<HomeLists/>}/>
+        <Route path="/home-furniture/:category" element={<CategoryPosts6 />} />
+        <Route path="/home-furniture/ALL" element={<HomeFiles />} />
+
+
+        
+        <Route path="/create7" element={<PetsLists/>}/>
+        <Route path="/pets/:category" element={<CategoryPosts7 />} />
+        <Route path="/pets/ALL" element={<PetsFiles />} />
+
+
+        <Route path="/create8" element={<HobbiesLists/>}/>
+        <Route path="/hobbies/:category" element={<CategoryPosts8 />} />
+        <Route path="/hobbies/ALL" element={<HobbiesFiles />} />
+
+
+        <Route path="/create9" element={<HealthLists/>}/>
+        <Route path="/health-beauty/:category" element={<CategoryPosts9 />} />
+        <Route path="/health-beauty/ALL" element={<HealthFiles />} />
+
+
+
+        
+
+
+        
 
       
 

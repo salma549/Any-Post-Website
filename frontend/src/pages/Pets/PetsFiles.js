@@ -1,9 +1,11 @@
 
 
+
+
 import { Link } from "react-router-dom";
 import Navbar8 from "../../components/Navbar8";
 
-function VechilesFile() {
+function PetsFiles() {
   return (
     <>
       {/* Navbar should be full width and visible clearly */}
@@ -13,16 +15,19 @@ function VechilesFile() {
 
       {/* Page Content */}
       <div style={styles.container}>
-        <h1 style={styles.heading}>Jobs Listings</h1>
-        <Link to="/create2" style={styles.createBtn}>Create New Post</Link>
+        <h1 style={styles.heading}>Pets Listings</h1>
+        <Link to="/create7" style={styles.createBtn}>Create New Post</Link>
 
         <h2 style={styles.subheading}>Categories</h2>
         <ul style={styles.categoryList}>
-        <li style={styles.categoryItem}><Link to="/baby-kids/ALL" style={styles.categoryLink}>ALL</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/clothes-shoes" style={styles.categoryLink}>Baby Clothes & Shoes</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/toys-games" style={styles.categoryLink}>Toys & Games</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/baby-gear" style={styles.categoryLink}>Baby Gear (strollers, car seats)</Link></li>
-         <li style={styles.categoryItem}><Link to="/baby-kids/kids-furniture" style={styles.categoryLink}>Kids' Furniture</Link></li>
+        <li style={styles.categoryItem}><Link to="/ALL" style={styles.categoryLink}>ALL</Link></li>
+
+        <li style={styles.categoryItem}><Link to="/pets/dogs" style={styles.categoryLink}>Dogs & Puppies</Link></li>
+<li style={styles.categoryItem}><Link to="/pets/cats" style={styles.categoryLink}>Cats & Kittens</Link></li>
+<li style={styles.categoryItem}><Link to="/pets/birds-fish" style={styles.categoryLink}>Birds & Fish</Link></li>
+<li style={styles.categoryItem}><Link to="/pets/supplies" style={styles.categoryLink}>Pet Supplies & Accessories</Link></li>
+<li style={styles.categoryItem}><Link to="/pets/farm-animals" style={styles.categoryLink}>Farm Animals</Link></li>
+
         </ul>
       </div>
     </>
@@ -110,4 +115,5 @@ styles.categoryLink[':hover'] = {
   color: "#007bff",
 };
 
-export default VechilesFile;
+export default PetsFiles;
+

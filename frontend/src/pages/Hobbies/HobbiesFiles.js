@@ -1,9 +1,11 @@
 
 
+
+
 import { Link } from "react-router-dom";
 import Navbar8 from "../../components/Navbar8";
 
-function VechilesFile() {
+function HobbiesFiles() {
   return (
     <>
       {/* Navbar should be full width and visible clearly */}
@@ -13,16 +15,19 @@ function VechilesFile() {
 
       {/* Page Content */}
       <div style={styles.container}>
-        <h1 style={styles.heading}>Jobs Listings</h1>
-        <Link to="/create2" style={styles.createBtn}>Create New Post</Link>
+        <h1 style={styles.heading}>Hobbies Listings</h1>
+        <Link to="/create8" style={styles.createBtn}>Create New Post</Link>
 
         <h2 style={styles.subheading}>Categories</h2>
         <ul style={styles.categoryList}>
-        <li style={styles.categoryItem}><Link to="/baby-kids/ALL" style={styles.categoryLink}>ALL</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/clothes-shoes" style={styles.categoryLink}>Baby Clothes & Shoes</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/toys-games" style={styles.categoryLink}>Toys & Games</Link></li>
-        <li style={styles.categoryItem}><Link to="/baby-kids/baby-gear" style={styles.categoryLink}>Baby Gear (strollers, car seats)</Link></li>
-         <li style={styles.categoryItem}><Link to="/baby-kids/kids-furniture" style={styles.categoryLink}>Kids' Furniture</Link></li>
+        <li style={styles.categoryItem}><Link to="/ALL" style={styles.categoryLink}>ALL</Link></li>
+
+        <li style={styles.categoryItem}><Link to="/hobbies/books" style={styles.categoryLink}>Books (New & Used)</Link></li>
+<li style={styles.categoryItem}><Link to="/hobbies/musical-instruments" style={styles.categoryLink}>Musical Instruments</Link></li>
+<li style={styles.categoryItem}><Link to="/hobbies/video-games" style={styles.categoryLink}>Video Games & Consoles</Link></li>
+<li style={styles.categoryItem}><Link to="/hobbies/collectibles" style={styles.categoryLink}>Collectibles</Link></li>
+<li style={styles.categoryItem}><Link to="/hobbies/sports-equipment" style={styles.categoryLink}>Sports Equipment</Link></li>
+
         </ul>
       </div>
     </>
@@ -110,4 +115,5 @@ styles.categoryLink[':hover'] = {
   color: "#007bff",
 };
 
-export default VechilesFile;
+export default HobbiesFiles;
+
