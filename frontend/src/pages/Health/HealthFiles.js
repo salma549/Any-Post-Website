@@ -15,7 +15,7 @@ function HealthFiles() {
 
       {/* Page Content */}
       <div style={styles.container}>
-        <h1 style={styles.heading}>Fashion Listings</h1>
+        <h1 style={styles.heading}>Health Listings</h1>
         <Link to="/create9" style={styles.createBtn}>Create New Post</Link>
 
         <h2 style={styles.subheading}>Categories</h2>
