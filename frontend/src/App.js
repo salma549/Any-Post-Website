@@ -113,6 +113,9 @@ import CategoryPosts9 from "./pages/Health/CategoryPosts";
 import KidsFiles from "./pages/Kids/KidsFiles";
 import KidsLists from "./pages/Kids/KidsLists";
 import CategoryPosts10 from "./pages/Kids/CategoryPosts";
+import CategoryPosts11 from "./pages/Freelance/CategoryPosts";
+import FreelanceFiles from "./pages/Freelance/FreelanceFiles";
+import FreelanceLists from "./pages/Freelance/FreelanceLists"
 
 
 
@@ -201,6 +204,14 @@ const App = () => {
         <Route path="/create10" element={<KidsLists/>}/>
         <Route path="/baby-kids/:category" element={<CategoryPosts10 />} />
         <Route path="/baby-kids/ALL" element={<KidsFiles />} />
+
+
+        <Route path="/create11" element={<FreelanceLists/>}/>
+        <Route path="/freelance/:category" element={<CategoryPosts11 />} />
+        <Route path="/freelance/ALL" element={<FreelanceFiles />} />
+
+
+
 
 
 

@@ -217,6 +217,10 @@ const AllCards = () => {
       image: icon9,
       title: "Freelance Gigs & Side Hustles",
       topics: [
+        {
+          name: "ALL",
+          path: "/freelance/All",
+        },
         { name: "Content Creation", path: "/freelance/content-creation" },
         { name: "Graphic Design", path: "/freelance/graphic-design" },
         { name: "Coding & Development", path: "/freelance/coding" },
