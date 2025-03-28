@@ -250,6 +250,10 @@ const AllCards = () => {
       image: icon11,
       title: "Miscellaneous",
       topics: [
+        {
+          name: "ALL",
+          path: "/miscellaneous/All",
+        },
         { name: "Everything Else", path: "/miscellaneous/everything-else" },
         { name: "Unique Items", path: "/miscellaneous/unique-items" },
         { name: "Barter & Trade", path: "/miscellaneous/barter-trade" },

@@ -119,6 +119,9 @@ import FreelanceLists from "./pages/Freelance/FreelanceLists"
 import CategoryPosts12 from "./pages/Community/CategoryPosts";
 import CommunityFiles from "./pages/Community/CommunityFiles";
 import CommunityLists from "./pages/Community/CommunityLists";
+import CategoryPosts13 from "./pages/Miscellaneous/CategoryPosts";
+import MiscellaneousFiles from "./pages/Miscellaneous/MiscellaneousFiles";
+import MiscellaneousLists from "./pages/Miscellaneous/MiscellaneousLists"
 
 
 
@@ -218,6 +221,11 @@ const App = () => {
         <Route path="/create12" element={<CommunityLists/>}/>
         <Route path="/community/:category" element={<CategoryPosts12 />} />
         <Route path="/community/ALL" element={<CommunityFiles />} />
+
+
+        <Route path="/create13" element={<MiscellaneousLists/>}/>
+        <Route path="/miscellaneous/:category" element={<CategoryPosts13 />} />
+        <Route path="/miscellaneous/ALL" element={<MiscellaneousFiles />} />
 
 
         
