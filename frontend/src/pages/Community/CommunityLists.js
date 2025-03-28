@@ -99,13 +99,14 @@ const HealthLists = () => {
         <input type="file" onChange={handleFileChange} required />
 
         <select name="category" value={formData.category} onChange={handleChange}>
-        <option value="create9">All</option>
+        <option value="create12">All</option>
 
-        <option value="/freelance/content-creation">Content Creation</option>
-<option value="/freelance/graphic-design">Graphic Design</option>
-<option value="/freelance/coding">Coding & Development</option>
-<option value="/freelance/digital-marketing">Digital Marketing</option>
-<option value="/freelance/virtual-assistant">Virtual Assistant Services</option>
+        <option value="/community/classes">Classes & Workshops</option>
+<option value="/community/local-events">Local Events</option>
+<option value="/community/lost-found">Lost & Found</option>
+<option value="/community/volunteers">Volunteers & Donations</option>
+<option value="/community/sports">Sports & Recreational Activities</option>
+
 
         </select>
 

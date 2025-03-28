@@ -116,6 +116,9 @@ import CategoryPosts10 from "./pages/Kids/CategoryPosts";
 import CategoryPosts11 from "./pages/Freelance/CategoryPosts";
 import FreelanceFiles from "./pages/Freelance/FreelanceFiles";
 import FreelanceLists from "./pages/Freelance/FreelanceLists"
+import CategoryPosts12 from "./pages/Community/CategoryPosts";
+import CommunityFiles from "./pages/Community/CommunityFiles";
+import CommunityLists from "./pages/Community/CommunityLists";
 
 
 
@@ -209,6 +212,15 @@ const App = () => {
         <Route path="/create11" element={<FreelanceLists/>}/>
         <Route path="/freelance/:category" element={<CategoryPosts11 />} />
         <Route path="/freelance/ALL" element={<FreelanceFiles />} />
+
+
+
+        <Route path="/create12" element={<CommunityLists/>}/>
+        <Route path="/community/:category" element={<CategoryPosts12 />} />
+        <Route path="/community/ALL" element={<CommunityFiles />} />
+
+
+        
 
 
 
