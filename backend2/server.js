@@ -29,7 +29,7 @@ app.use("/health-beauty", postRoutes);
 app.use("/baby-kids", postRoutes);
 app.use("/freelance", postRoutes);
 app.use("/community", postRoutes);
-app.use("/miscellaneous", postRoutes);
+app.use("/miscellaneous", postRoutes)
 
 
 
